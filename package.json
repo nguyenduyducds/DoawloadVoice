@@ -1,0 +1,14 @@
+{
+  "name": "tool-tai-giong",
+  "version": "1.0.0",
+  "description": "Tool tải giọng nói ElevenLabs - Voice Library desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

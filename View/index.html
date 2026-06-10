@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Tải Giọng - Thư viện giọng nói</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">🎙️ Tool Tải Giọng <span>Thư viện giọng</span></div>
+        <div class="dl-info">
+            📁 Tải về: <span id="downloadDir" class="dir-path">...</span>
+            <button id="chooseDirBtn" class="btn ghost">Đổi</button>
+        </div>
+    </header>
+
+    <!-- Tabs ngôn ngữ (tạo động theo dữ liệu) -->
+    <nav class="tabs" id="langTabs"></nav>
+
+    <section class="content">
+        <div class="toolbar">
+            <input type="text" id="searchInput" placeholder="Tìm tên giọng..." />
+            <button id="downloadAllBtn" class="btn">⬇ Tải tất cả đang hiện</button>
+        </div>
+
+        <div id="message" class="message"></div>
+        <div id="voiceGrid" class="voice-grid"></div>
+    </section>
+
+    <audio id="player"></audio>
+    <script src="renderer.js"></script>
+</body>
+</html>
